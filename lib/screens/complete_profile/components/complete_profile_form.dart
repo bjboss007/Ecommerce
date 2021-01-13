@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toyoko/components/custom_suffix.dart';
 import 'package:toyoko/components/default_button.dart';
 import 'package:toyoko/components/form_error.dart';
+import 'package:toyoko/screens/otp/otp_screen.dart';
 
 import '../../../contants.dart';
 import '../../../size_config.dart';
@@ -53,7 +54,6 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
             height: getProportionateHeight(30),
           ),
           buildAddressForm(),
-        
           FormError(
             errors: errors,
           ),
@@ -65,6 +65,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
             press: () {
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
+                Navigator.pushNamed(context, OtpScreen.routeName);
               }
             },
           ),
@@ -117,6 +118,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
           lastName = value;
         } else if (value.length == 11) {
           addError("Enter a valid phone number");
+          return "";
         }
         phoneNumber = value;
       },

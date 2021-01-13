@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:toyoko/size_config.dart';
 
 const kPrimaryColor = Color(0xFFFF7643);
 const kPrimaryLightColor = Color(0xFFFFECDF);
@@ -23,3 +25,18 @@ const String kMatchPassError = "Passwords don't match";
 const String kNamelNullError = "Please Enter your name";
 const String kPhoneNumberNullError = "Please Enter your phone number";
 const String kAddressNullError = "Please Enter your address";
+
+final otpDecorator = InputDecoration(
+    contentPadding: EdgeInsets.symmetric(vertical: getProportionateWidth(15)),
+    enabledBorder: outLineInputBorder(),
+    focusedBorder: outLineInputBorder(),
+    border: outLineInputBorder(),
+    );
+
+
+OutlineInputBorder outLineInputBorder() {
+  return OutlineInputBorder(
+    borderRadius: BorderRadius.circular(15),
+    borderSide: BorderSide(color: kTextColor),
+  );
+}
