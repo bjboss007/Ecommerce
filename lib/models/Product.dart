@@ -8,19 +8,17 @@ class Product {
   final double rating, price;
   final bool isFavourite, isPopular;
 
-  Product(
-      {
-        this.id,
-      this.title,
-      this.description,
-      @required this.colors,
-      @required this.images,
-      this.rating = 0.0,
-      @required this.price,
-      this.isFavourite = false,
-      this.isPopular = false
-      }
-    );
+  Product({
+    this.id,
+    this.title,
+    this.description,
+    @required this.colors,
+    @required this.images,
+    this.rating = 0.0,
+    @required this.price,
+    this.isFavourite = false,
+    this.isPopular = false
+  });
 }
 
 List<Product> demoProducts = [

@@ -14,17 +14,18 @@ class Categories extends StatelessWidget {
       {"icon": "assets/icons/Discover.svg", "text": "More"},
     ];
     return Padding(
-      padding:  EdgeInsets.symmetric(horizontal: getProportionateWidth(20)),
+      padding: EdgeInsets.symmetric(horizontal: getProportionateWidth(20)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ...List.generate(categories.length, (index) => CategoriesCard(
-            text: categories[index]["text"],
-             icon: categories[index]["icon"], 
-             press: (){} )
+          ...List.generate(categories.length, (index) =>
+              CategoriesCard(
+                  text: categories[index]["text"],
+                  icon: categories[index]["icon"],
+                  press: () {})
           )
-          
+
         ],
       ),
     );

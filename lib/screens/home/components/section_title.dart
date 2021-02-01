@@ -22,8 +22,8 @@ class SectionTitle extends StatelessWidget {
           Text(text,
               style: TextStyle(
                   fontSize: getProportionateWidth(18), color: Colors.black)),
-          GestureDetector( onTap : press , child:Text("show more")),
-          
+          GestureDetector(onTap: press, child: Text("show more")),
+
         ],
       ),
     );

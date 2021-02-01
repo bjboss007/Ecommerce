@@ -28,13 +28,13 @@ class SpecialOffers extends StatelessWidget {
                 imageUrl: "assets/images/Image Banner 2.png",
                 category: "Smartphones",
                 numBrands: 18,
-                press: (){},
+                press: () {},
               ),
               SpecialOfferCard(
                 imageUrl: "assets/images/Image Banner 3.png",
                 category: "Fashion",
                 numBrands: 24,
-                press: (){},
+                press: () {},
               ),
               SizedBox(width: getProportionateWidth(20),)
             ],

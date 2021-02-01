@@ -9,7 +9,7 @@ class OtpScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title : Text("OTP Verification"),
+        title: Text("OTP Verification"),
       ),
       body: Body(),
     );

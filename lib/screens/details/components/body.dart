@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:toyoko/components/default_button.dart';
-import 'package:toyoko/components/rounded_icon_btn.dart';
-import 'package:toyoko/contants.dart';
 import 'package:toyoko/models/Product.dart';
 import 'package:toyoko/screens/details/components/top_rounded_container.dart';
 import 'package:toyoko/size_config.dart';

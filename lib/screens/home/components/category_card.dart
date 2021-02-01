@@ -6,11 +6,11 @@ import '../../../size_config.dart';
 class CategoriesCard extends StatelessWidget {
   const CategoriesCard({
     Key key,
-    @required this.text,  @required this.icon,  @required this.press,
+    @required this.text, @required this.icon, @required this.press,
   }) : super(key: key);
 
   final String text, icon;
-  final GestureTapCallback press; 
+  final GestureTapCallback press;
 
   @override
   Widget build(BuildContext context) {

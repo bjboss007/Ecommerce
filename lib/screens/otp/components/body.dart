@@ -58,10 +58,11 @@ class Body extends StatelessWidget {
         TweenAnimationBuilder(
           duration: Duration(seconds: 30),
           tween: Tween(begin: 30.0, end: 0),
-          builder: (context, value, child) => Text(
-            "00:${value.toInt()}",
-            style: TextStyle(color: kPrimaryColor),
-          ),
+          builder: (context, value, child) =>
+              Text(
+                "00:${value.toInt()}",
+                style: TextStyle(color: kPrimaryColor),
+              ),
           onEnd: () {
             Scaffold.of(context).showSnackBar(SnackBar(
               content: Text("OTP expired"),

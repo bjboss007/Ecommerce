@@ -18,33 +18,33 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: SingleChildScrollView(
-      child: Column(children: [
-        SizedBox(
-          height: getProportionateHeight(20),
-        ),
-        HomeHeader(),
-        SizedBox(
-          height: getProportionateHeight(30),
-        ),
-        DiscountBanner(),
-        SizedBox(
-          height: getProportionateHeight(30),
-        ),
-        Categories(),
-        SizedBox(
-          height: getProportionateHeight(30),
-        ),
-        SpecialOffers(),
-        SizedBox(
-          height: getProportionateHeight(30),
-        ),
-        
-        PopularProducts(),
-        SizedBox(
-          height: getProportionateHeight(30),
-        ),
-      ]),
-    ));
+          child: Column(children: [
+            SizedBox(
+              height: getProportionateHeight(20),
+            ),
+            HomeHeader(),
+            SizedBox(
+              height: getProportionateHeight(30),
+            ),
+            DiscountBanner(),
+            SizedBox(
+              height: getProportionateHeight(30),
+            ),
+            Categories(),
+            SizedBox(
+              height: getProportionateHeight(30),
+            ),
+            SpecialOffers(),
+            SizedBox(
+              height: getProportionateHeight(30),
+            ),
+
+            PopularProducts(),
+            SizedBox(
+              height: getProportionateHeight(30),
+            ),
+          ]),
+        ));
   }
 }
 

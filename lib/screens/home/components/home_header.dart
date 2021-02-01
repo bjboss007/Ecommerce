@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:toyoko/models/Cart.dart';
+import 'package:toyoko/screens/cart/cart_screen.dart';
 
 import '../../../size_config.dart';
 import 'icon_btn_with_counter.dart';
@@ -12,14 +15,18 @@ class HomeHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:
-          EdgeInsets.symmetric(horizontal: getProportionateWidth(20)),
+      padding: EdgeInsets.symmetric(horizontal: getProportionateWidth(20)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SearchField(),
           IconBtnWithCounter(
-              icon: "assets/icons/Cart Icon.svg", press: () {}, numOfItem: 0,),
+            icon: "assets/icons/Cart Icon.svg",
+            press: () =>
+              Navigator.pushNamed(context, CartScreen.routeName),
+            
+            numOfItem: demoCarts.length,
+          ),
           IconBtnWithCounter(
             icon: "assets/icons/Bell.svg",
             press: () {},

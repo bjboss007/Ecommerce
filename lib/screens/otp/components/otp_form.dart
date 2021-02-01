@@ -123,7 +123,7 @@ class _OtpFormState extends State<OtpForm> {
           ),
           Padding(
             padding:
-                EdgeInsets.symmetric(horizontal: getProportionateHeight(50)),
+            EdgeInsets.symmetric(horizontal: getProportionateHeight(50)),
             child: DefaultButton(
               text: "Continue",
               press: () {},
